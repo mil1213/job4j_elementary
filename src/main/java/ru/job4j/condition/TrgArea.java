@@ -4,8 +4,7 @@ public class TrgArea {
 
     public static double area(double a, double b, double c) {
         double pp = (a + b + c) / 2;
-        double rs1 = pp * (pp - a) * (pp - b) * (pp - c);
-        double rsl = Math.sqrt(rs1);
+        double rsl = Math.sqrt(pp * (pp - a) * (pp - b) * (pp - c));
         return rsl;
     }
 
