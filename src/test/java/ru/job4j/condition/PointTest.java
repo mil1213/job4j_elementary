@@ -6,7 +6,7 @@ import org.junit.Assert;
 public class PointTest {
 
     @Test
-    public void when34to51() {
+    public void when34to51Then3dot6() {
         int x1 = 3;
         int y1 = 4;
         int x2 = 5;
@@ -17,7 +17,7 @@ public class PointTest {
     }
 
     @Test
-    public void when21to62() {
+    public void when21to62Then4dot1() {
         int x1 = 2;
         int y1 = 1;
         int x2 = 6;
@@ -28,7 +28,7 @@ public class PointTest {
     }
 
     @Test
-    public void whenm36to2m4() {
+    public void whenm36to2mThen11dot18() {
         int x1 = -3;
         int y1 = 6;
         int x2 = 2;
