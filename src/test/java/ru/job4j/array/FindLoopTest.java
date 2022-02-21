@@ -23,7 +23,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind3() {
+    public void whenDiapasonHas0Then3() {
         int[] data = new int[] {7, 5, 9, 0, 8};
         int el = 0;
         int start = 2;
@@ -34,7 +34,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenNotFind4() {
+    public void whenDiapasonHasNot8ThenMinus1() {
         int[] data = new int[] {7, 5, 9, 0, 8};
         int el = 8;
         int start = 1;
