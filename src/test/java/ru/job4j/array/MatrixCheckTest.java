@@ -51,4 +51,40 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, column);
         Assert.assertFalse(result);
     }
+
+    @Test
+    public void whenDiagonalFullX() {
+        char[][] input = {
+                {'x', ' ', ' '},
+                {' ', 'x', ' '},
+                {' ', ' ', 'x'}
+        };
+        char[] exp = {'x', 'x', 'x'};
+        char[] result = MatrixCheck.extractDiagonal(input);
+        Assert.assertArrayEquals(exp, result);
+    }
+
+    @Test
+    public void whenDiagonalFull2() {
+        char[][] input = {
+                {'2', ' ', ' '},
+                {' ', '2', ' '},
+                {' ', ' ', '2'}
+        };
+        char[] exp = {'2', '2', '2'};
+        char[] result = MatrixCheck.extractDiagonal(input);
+        Assert.assertArrayEquals(exp, result);
+    }
+
+    @Test
+    public void whenDiagonalFullMix() {
+        char[][] input = {
+                {'a', ' ', ' '},
+                {' ', 'b', ' '},
+                {' ', ' ', 'c'}
+        };
+        char[] exp = {'a', 'b', 'c'};
+        char[] result = MatrixCheck.extractDiagonal(input);
+        Assert.assertArrayEquals(exp, result);
+    }
 }
